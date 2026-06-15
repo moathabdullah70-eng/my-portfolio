@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض أعمالي | مصمم جرافيك ومحرر فيديو</title>
+    <!-- ربط ملف التصميم والألوان الذي سننشئه في الخطوة القادمة -->
+    <link rel="stylesheet" href="style.css">
+    <!-- رابط لجلب أيقونات مميزة من موقع FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. شريط التنقل العلوي (Navbar) -->
+    <header>
+        <div class="logo">معاذ عبدالله | مصمم جرافيك وإيديتور</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#portfolio">أعمالي</a></li>
+                <li><a href="#skills">مهاراتي</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- 2. قسم المقدمة (Hero Section) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <!-- الصورة الشخصية -->
+            <div class="hero-image">
+                <!-- استبدل your-photo.jpg باسم ملف صورتك لاحقاً في المجلد -->
+              <img src="your-photo.jpg" alt="معاذ عبدالله">
+            </div>
+            
+            <!-- النبذة الاحترافية -->
+            <div class="hero-content">
+                <h1>أهلاً، أنا <span class="highlight">معاذ مصمم جرافيك ومحرر فيديو</span></h1>
+                <p>مبدع بصري بخبرة 4 سنوات في صياغة الهويات الإعلانية ومونتاج المحتوى الرقمي. أدمج بين الفن البصري والتسويق الرقمي لأحول الأفكار إلى ريلز وتصاميم تخطف الأنظار وتحقق نتائج ملموسة.</p>
+                <a href="#portfolio" class="btn">شاهد أعمالي <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- 3. قسم معرض الأعمال (Portfolio Section) -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>معرض الأعمال</h2>
+        <p class="section-subtitle">لمحة عن بعض المشاريع التي تشرفت بالعمل عليها</p>
+        
+        <!-- أزرار التصفية بين المونتاج والتصميم -->
+       <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterSelection('all')">الكل</button>
+            <button class="filter-btn" onclick="filterSelection('video')">المونتاج والريلز</button>
+            <button class="filter-btn" onclick="filterSelection('report')">التقارير السنوية</button>
+            <button class="filter-btn" onclick="filterSelection('logo-item')">الشعارات</button>
+            <button class="filter-btn" onclick="filterSelection('social')">السوشيال ميديا</button>
+        </div>
+
+        <!-- شبكة عرض الأعمال -->
+       <!-- شبكة عرض الأعمال -->
+        <div class="projects-grid">
+            
+            <!-- ريلز 1 -->
+            <div class="project-item video">
+                <div class="project-card">
+                    <div class="local-video-container">
+                        <video controls preload="auto" width="100%">
+                            <source src="videos/video1.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>فيديو ريلز إعلاني أول</h3>
+                        <p>مونتاج وتلوين مخصص لمنصات التواصل الاجتماعي بأبعاد طولية.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ريلز 2 -->
+            <div class="project-item video">
+                <div class="project-card">
+                    <div class="local-video-container">
+                        <video controls preload="auto" width="100%">
+                            <source src="videos/video2.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>فيديو ريلز إعلاني ثاني</h3>
+                        <p>تعديل سريع ومؤثرات بصرية جذابة لزيادة التفاعل.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ريلز 3 -->
+            <div class="project-item video">
+                <div class="project-card">
+                    <div class="local-video-container">
+                        <video controls preload="auto" width="100%">
+                            <source src="videos/video3.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>فيديو ريلز إعلاني ثالث</h3>
+                        <p>قصة بصرية قصيرة موجهة للجمهور المستهدف.</p>
+                    </div>
+                </div>
+            </div>
+
+         <div class="project-item report">
+                <div class="project-card">
+                    <a href="pdf/report1.pdf" target="_blank">
+                        <img src="images/report1.jpg" alt="تصميم تقرير سنوي">
+                    </a>
+                    <div class="project-info">
+                        <h3>تصميم تقرير سنوي للمنظمات</h3>
+                        <p>تنسيق الهوية البصرية، إنفوجرافيك البيانات، وإخراج التقرير بشكل احترافي.</p>
+                        <a href="pdf/report1.pdf" target="_blank" class="view-pdf-btn"><i class="fas fa-file-pdf"></i> تصفح التقرير كاملاً</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item report">
+                <div class="project-card">
+                    <a href="pdf/report2.pdf" target="_blank">
+                        <img src="images/report2.jpg" alt="تصميم تقرير إغاثي">
+                    </a>
+                    <div class="project-info">
+                        <h3>تقرير سنوي ومؤسسي</h3>
+                        <p>إخراج إبداعي يركز على إبراز الإنجازات والأرقام الإحصائية بطريقة بصرية ممتعة.</p>
+                        <a href="pdf/report2.pdf" target="_blank" class="view-pdf-btn"><i class="fas fa-file-pdf"></i> تصفح التقرير كاملاً</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item report">
+                <div class="project-card">
+                    <a href="pdf/report3.pdf" target="_blank">
+                        <img src="images/report3.jpg" alt="تصميم هوية تقرير">
+                    </a>
+                    <div class="project-info">
+                        <h3>تصميم وإخراج تقارير إبداعية</h3>
+                        <p>بناء المفهوم البصري واختيار الألوان المتناسقة التي تعبر عن الرسالة المؤسسية.</p>
+                        <a href="pdf/report3.pdf" target="_blank" class="view-pdf-btn"><i class="fas fa-file-pdf"></i> تصفح التقرير كاملاً</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-item logo-item">
+                <div class="project-card logo-card">
+                    <img src="images/logo1.png" alt="تصميم شعار">
+                    <div class="project-info">
+                        <h3>شعار هوية تجارية</h3>
+                        <p>تصميم شعار مبتكر يعبر عن قيم العلامة التجارية وبساطتها.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item logo-item">
+                <div class="project-card logo-card">
+                    <img src="images/logo2.png" alt="تصميم شعار">
+                    <div class="project-info">
+                        <h3>شعار شركة / مؤسسة</h3>
+                        <p>مفهوم بصري حديث يعتمد على الأشكال الهندسية المتزنة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item logo-item">
+                <div class="project-card logo-card">
+                    <img src="images/logo3.png" alt="تصميم شعار">
+                    <div class="project-info">
+                        <h3>شعار تطبيق ذكي</h3>
+                        <p>بناء أيقونة مميزة وسهلة التذكر ومناسبة لواجهات المستخدم.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item logo-item">
+                <div class="project-card logo-card">
+                    <img src="images/logo4.png" alt="تصميم شعار">
+                    <div class="project-info">
+                        <h3>شعار منصة رقمية</h3>
+                        <p>خطوط عصرية وهوية بصرية فريدة تتناسب مع متطلبات السوق الحديث.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item logo-item">
+                <div class="project-card logo-card">
+                    <img src="images/logo5.png" alt="تصميم شعار">
+                    <div class="project-info">
+                        <h3>شعار مشروع شخصي</h3>
+                        <p>تجسيد الأفكار الإبداعية في رمز بصري بسيط ومعبر.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-item social">
+                <div class="project-card">
+                    <img src="images/social1.jpg" alt="تصميم سوشيال ميديا">
+                    <div class="project-info">
+                        <h3>تصميم إعلاني لمنتج</h3>
+                        <p>دمج احترافي وعزل وتعديل ألوان لإبراز المنتج بشكل تسويقي جذاب.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item social">
+                <div class="project-card">
+                    <img src="images/social2.jpg" alt="تصميم سوشيال ميديا">
+                    <div class="project-info">
+                        <h3>بوستر تهنئة / مناسبات</h3>
+                        <p>تصميم يدمج بين التايبوجرافي العربي والعناصر البصرية المتناسقة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item social">
+                <div class="project-card">
+                    <img src="images/social3.jpg" alt="تصميم سوشيال ميديا">
+                    <div class="project-info">
+                        <h3>تصميم عرض خدمات (انفوجرافيك)</h3>
+                        <p>ترتيب المعلومات والخدمات بشكل مريح للعين يسهم في زيادة المبيعات.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- 4. قسم المهارات والأدوات (Skills Section) -->
+    <section id="skills" class="skills-section">
+        <h2>الأدوات والمهارات</h2>
+        <div class="skills-container">
+            <div class="skill-box"><i class="fab fa-adobe"></i> Premiere Pro</div>
+            <div class="skill-box"><i class="fab fa-adobe"></i> After Effects</div>
+            <div class="skill-box"><i class="fab fa-adobe"></i> Photoshop</div>
+            <div class="skill-box"><i class="fab fa-adobe"></i> Illustrator</div>
+            <div class="skill-box"><i class="fas fa-code"></i> HTML & CSS</div>
+        </div>
+    </section>
+
+    <!-- 5. قسم تواصل معي (Contact Section) -->
+    <footer id="contact">
+        <h2>دعنا نعمل معاً</h2>
+        <p>هل لديك مشروع أو فكرة تريد تحويلها إلى واقع؟ أنا جاهز للبدء!</p>
+       <div class="contact-links">
+            <!-- رابط الواتساب المباشر برقمك ومفتاح اليمن -->
+            <a href="https://wa.me/967770352694" target="_blank" class="contact-icon whatsapp"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <!-- رابط البريد الإلكتروني الخاص بك -->
+            <a href="mailto:moathabdullah70@gmail.com" class="contact-icon email"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+        </div>
+        <p class="copy-right">جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+    <!-- ربط ملف الجافا سكريبت للتفاعل والتصفية -->
+    <script src="script.js"></script>
+</body>
+</html>
